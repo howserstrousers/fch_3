@@ -1,21 +1,25 @@
 html{
-	font-family: sans-serif;
+	font-family: 'Yantramanav', sans-serif;
 	font-size: 16px;
 }
 
 body{
-	background-color: #000000;
-	color:white;
+	background-color: #262626;
+    color:#999999;
+	
 }
 
 a{
-	color:white;
+	color:#727272;
 	text-decoration: none;
 }
 
+img{
+	width:100%;
+	height:100%;
+}
+
 .me{
-	font-size: 1.2rem;
-	letter-spacing: 1px
 }
 
 .selected{
@@ -24,37 +28,49 @@ a{
     perspective: 150px;
 }
 
-@keyframes one {
-    50%{margin-top:-5px;
-    -webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(45deg);}
+.skills{
+	display:none;
+	line-height: 1.5rem;
+}
 
-    100%{margin-top:0px;
+@keyframes one {
+    33%{
+    	-webkit-transform: rotateX(-30deg); /* Chrome, Safari, Opera  */
+    	transform: rotateX(-30deg);
+    }
+
+    66%{
+    	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
+    	transform: rotateX(0deg);
+    }
+
+    100%{
     	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
     	transform: rotateX(0deg);
     }
 }
 
 .one {
-	border: 1px solid white;
-	height:60px;
+	border-right: 1px solid white;
+	height:auto;
 	padding: 0 auto;
+    padding-bottom: 10px;
 
 	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
     transform: rotateX(0deg);
 
 	animation-name: one;
-	animation-duration: 3s;
+	animation-duration:5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes two {
-    50%{margin-top:5px;
-    	-webkit-transform: rotateX(45deg); /* Chrome, Safari, Opera  */
-    	transform: rotateX(45deg);
+    50%{margin-top:20px;
+    	-webkit-transform: rotateX(5deg); /* Chrome, Safari, Opera  */
+    	transform: rotateX(5deg);
     }
-    
+
     100%{margin-top:0px;
     -webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
     transform: rotateX(0deg);}
@@ -62,9 +78,10 @@ a{
 
 .two{
 	margin-top: 0px;
-
+/*
 	animation-name: two;
 	animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+*/
 }
