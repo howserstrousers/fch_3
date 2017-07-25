@@ -23,7 +23,8 @@ img{
 }
 
 .selected{
-	margin-top: 10%;
+	margin-top: 5%;
+    padding-bottom: 2%;
 	-webkit-perspective: 150px; /* Chrome, Safari, Opera  */
     perspective: 150px;
 }
@@ -32,6 +33,8 @@ img{
 	display:none;
 	line-height: 1.5rem;
 }
+
+
 
 @keyframes one {
     33%{
@@ -84,4 +87,16 @@ img{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 */
+
 }
+
+#smalls1{
+    width: 100%;
+    height: 100%;
+}
+
+#smalls2{
+    width: 100%;
+    height: 100%;
+}
+
