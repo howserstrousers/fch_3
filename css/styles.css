@@ -1,16 +1,63 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    padding: 0;
+    border: 0;
+    font-size: 100%;xs
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    background-color: #262626;
+    color:#999999;
+    cursor: pointer;
+    margin:0 auto;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 html{
-	font-family: 'Yantramanav', sans-serif;
+	font-family: 'Yantramanav', 'Helvetica', sans-serif;
 	font-size: 14px;
 }
 
-body{
-	background-color: #262626;
-    color:#999999;
-	
-}
-
 a{
-    color:#999999;
+    color:white;
 	text-decoration: none;
 }
 
@@ -24,88 +71,191 @@ img{
 	height:100%;
 }
 
-.me{
+p{
+    color:white;
+}
+
+/* DESKTOP INDEX CSS */
+.container{
+    width:100%;
+    height:100%;
     font-size:1.2rem;
-    letter-spacing: 1px; 
-    text-transform: uppercase;
-    position:fixed;
+    letter-spacing: 5px;
 
 }
 
-.intro{
-    margin-top: 15%;
-}
-
-.selected{
-	margin-top: 5%;
-    padding-bottom: 2%;
-	-webkit-perspective: 150px; /* Chrome, Safari, Opera  */
-    perspective: 150px;
-}
-
-.skills{
-	display:none;
-	line-height: 1.5rem;
-}
-
-
-
-@keyframes one {
-    33%{
-    	-webkit-transform: rotateX(-15deg); /* Chrome, Safari, Opera  */
-    	transform: rotateX(--15deg);
+    @media only screen and (min-width: 1024px){
+        .container{
+               display:none;
+            }
     }
 
-    66%{
-    	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
-    	transform: rotateX(0deg);
+
+.me{
+    margin:5%;
+    margin-bottom: 0;
+    padding-top: 19%;
+    padding-bottom: 19%;
+    padding-left: 5%;
+
+}
+
+    @media only screen and (min-width: 414px){
+        .me{
+                padding-top: 18%;
+                padding-bottom: 20%;
+            }
     }
 
-    100%{
-    	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
-    	transform: rotateX(0deg);
-    }
-}
-
-.one {
-	height:auto;
-	padding: 0 auto;
-    padding-bottom: 10px;
-
-	-webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(0deg);
-
-	animation-name: one;
-	animation-duration:5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@keyframes two {
-    50%{margin-top:20px;
-    	-webkit-transform: rotateX(5deg); /* Chrome, Safari, Opera  */
-    	transform: rotateX(5deg);
+    @media only screen and (min-width: 768px){
+        .me{
+                margin-top:5%;
+                padding-top: 14%;
+                padding-bottom: 16%;
+            }
     }
 
-    100%{margin-top:0px;
-    -webkit-transform: rotateX(0deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(0deg);}
+    @media only screen and (min-width: 1024px){
+        .me{
+                display:none;
+            }
+    }
+
+.workbutton{
+    margin:5%;
+    margin-bottom: 0;
+    padding-top: 19%;
+    padding-bottom: 19%;
+    padding-left: 5%;
+
+}   
+     @media only screen and (min-width: 414px){
+        .workbutton{
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+    }
+
+     @media only screen and (min-width: 768px){
+        .workbutton{
+                padding-top: 15%;
+                padding-bottom: 16%;
+            }
+    }
+
+    @media only screen and (min-width: 1024px){
+        .workbutton{
+                display:none;
+            }
+    }
+
+.contactbutton{
+    margin:5%;
+    padding-top: 19%;
+    padding-bottom: 19%;
+    padding-left: 5%;
+
 }
 
-.two{
-	margin-top: 0px;
-/*
-	animation-name: two;
-	animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-*/
+    @media only screen and (min-width: 414px){
+        .contactbutton{
+                padding-top: 20%;
+                padding-bottom: 20%;
+            }
+    }
+
+    @media only screen and (min-width: 768px){
+        .contactbutton{
+                padding-top: 15%;
+                padding-bottom: 16%;
+            }
+    }
+
+    @media only screen and (min-width: 1024px){
+        .contactbutton{
+                display:none;
+            }
+    }
+/* END MOBILE INDEX CSS */
+
+/* DESKTOP INDEX CSS */
+
+.desktop_container{
+    text-align: center;
+}
+
+    @media only screen and (max-width: 1023px){
+        .desktop_container{
+                display:none;
+            }
+    }
+
+.desktop_me{
+   
+}
+
+.desktop_workbutton{
+    margin-left: 2%;
+}
+
+.desktop_contact{
+    margin-left: 2%;
+}
+
+.worknav{
+    text-align: center;
+}
+
+/* END DESKTOP INDEX CSS */
+ 
+.work_me{
+
+} 
+
+.work_contactbutton{
+    margin: 0 auto;
+    margin-left: 1.5%;
 
 }
 
-#smalls1{
-    width: 100%;
-    height: 100%;
+    @media only screen and (max-width: 1023px){
+        .work_contactbutton{
+            margin-left: 0;
+            }
+    }
+
+.project{
+    margin: 0;
+
 }
+
+.project img{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+    @media only screen and (min-width: 1400px){
+        .project img{
+            width:70%;
+            }
+    }
+
+.projectinfo{
+
+}
+    @media only screen and (max-width: 1023px){
+        .projectinfo{
+            text-align: center
+            }
+    }
+
+    @media only screen and (min-width: 1023px){
+        .projectinfo{
+            margin-left: 2%;
+            }
+    }
+
 
 
